@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 47;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,8 @@
 		560D5A1021FF5D2B00553AEC /* libirecovery.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 560D5A0F21FF5D2B00553AEC /* libirecovery.a */; };
 		560D5A1221FF5D3700553AEC /* libplist.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 560D5A1121FF5D3700553AEC /* libplist.a */; };
 		560D5A1421FF5D4600553AEC /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 560D5A1321FF5D4600553AEC /* libssl.a */; };
+		562A390622A2CECC00FFDA22 /* endianness.h in Sources */ = {isa = PBXBuildFile; fileRef = 873FC1221E22D7B40089AE60 /* endianness.h */; };
+		562A390722A2CED100FFDA22 /* all.h in Sources */ = {isa = PBXBuildFile; fileRef = 560D5A0A21FF5CF700553AEC /* all.h */; };
 		873FC1291E22D7B40089AE60 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 873FC11E1E22D7B40089AE60 /* common.c */; };
 		873FC12A1E22D7B40089AE60 /* dfu.c in Sources */ = {isa = PBXBuildFile; fileRef = 873FC1201E22D7B40089AE60 /* dfu.c */; };
 		873FC12B1E22D7B40089AE60 /* idevicerestore.c in Sources */ = {isa = PBXBuildFile; fileRef = 873FC1231E22D7B40089AE60 /* idevicerestore.c */; };
@@ -163,8 +165,8 @@
 				};
 			};
 			buildConfigurationList = 87FBE6491D2BCC0700FB5E05 /* Build configuration list for PBXProject "igetnonce" */;
-			compatibilityVersion = "Xcode 6.3";
-			developmentRegion = English;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 			);
@@ -206,8 +208,10 @@
 			files = (
 				873FC12D1E22D7B40089AE60 /* recovery.c in Sources */,
 				873FC12A1E22D7B40089AE60 /* dfu.c in Sources */,
+				562A390722A2CED100FFDA22 /* all.h in Sources */,
 				873FC12C1E22D7B40089AE60 /* normal.c in Sources */,
 				873FC1291E22D7B40089AE60 /* common.c in Sources */,
+				562A390622A2CECC00FFDA22 /* endianness.h in Sources */,
 				873FC12B1E22D7B40089AE60 /* idevicerestore.c in Sources */,
 				87FBE6521D2BCC0700FB5E05 /* main.c in Sources */,
 			);

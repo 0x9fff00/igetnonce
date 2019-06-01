@@ -59,7 +59,7 @@ int main(int argc, const char * argv[]) {
     if (argc >= 3){
         if (strncmp(argv[1],"-e",2) == 0){
             if ((client->ecid = parseECID(argv[2])) == 0){
-                printf("Error: can't parse ECID \"%s\", continuing without ecid\n",argv[2]);
+                printf("Error: can't parse ECID \"%s\", continuing without ECID\n",argv[2]);
             }else{
                 printf("User specified ECID=%llx\n",client->ecid);
             }
@@ -84,7 +84,7 @@ int main(int argc, const char * argv[]) {
             info("in normal mode... ");
             break;
         case MODE_DFU:
-            info("in dfu mode... ");
+            info("in DFU mode... ");
             break;
         case MODE_RECOVERY:
             info("in recovery mode... ");
