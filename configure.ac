@@ -23,6 +23,20 @@ PKG_CHECK_MODULES(libirecovery, libirecovery >= 0.2.0)
 PKG_CHECK_MODULES(libusbmuxd, libusbmuxd >= 0.29.1)
 PKG_CHECK_MODULES(openssl, openssl >= 0.9.8)
 
+AC_MSG_CHECKING([whether we need platform-specific build settings])
+case ${host_os} in
+  *mingw32*|*cygwin*)
+    AC_MSG_RESULT([yes])
+    win32=true
+    GLOBAL_CFLAGS+="-DWIN32 -D__LITTLE_ENDIAN__=1"
+    AC_LDFLAGS+="-static-libgcc"
+    ;;
+  darwin*)
+    AC_MSG_RESULT([yes])
+    AC_DEFINE([_DARWIN_BETTER_REALPATH], [1], [Use better method for realpath])
+esac
+AM_CONDITIONAL(WIN32, test x$win32 = xtrue)
+
 # Checks for header files.
 AC_CHECK_HEADERS([stdint.h stdlib.h string.h unistd.h])
 
