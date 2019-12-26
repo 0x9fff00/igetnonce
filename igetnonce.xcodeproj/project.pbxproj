@@ -3,18 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5669113823B4B50700C93279 /* libusbmuxd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5669113723B4B50700C93279 /* libusbmuxd.a */; };
+		5669113B23B4B52E00C93279 /* libirecovery.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5669113A23B4B52E00C93279 /* libirecovery.a */; };
+		5669113D23B4B53E00C93279 /* libimobiledevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5669113C23B4B53E00C93279 /* libimobiledevice.a */; };
+		5669113F23B4B63F00C93279 /* endianness.h in Sources */ = {isa = PBXBuildFile; fileRef = 873FC1221E22D7B40089AE60 /* endianness.h */; };
+		5669114023B4B64600C93279 /* all.h in Sources */ = {isa = PBXBuildFile; fileRef = 5669113623B4B4C300C93279 /* all.h */; };
+		5669114223B4B7C500C93279 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5669114123B4B7C400C93279 /* libcrypto.a */; };
 		873FC1291E22D7B40089AE60 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 873FC11E1E22D7B40089AE60 /* common.c */; };
 		873FC12A1E22D7B40089AE60 /* dfu.c in Sources */ = {isa = PBXBuildFile; fileRef = 873FC1201E22D7B40089AE60 /* dfu.c */; };
 		873FC12B1E22D7B40089AE60 /* idevicerestore.c in Sources */ = {isa = PBXBuildFile; fileRef = 873FC1231E22D7B40089AE60 /* idevicerestore.c */; };
 		873FC12C1E22D7B40089AE60 /* normal.c in Sources */ = {isa = PBXBuildFile; fileRef = 873FC1251E22D7B40089AE60 /* normal.c */; };
 		873FC12D1E22D7B40089AE60 /* recovery.c in Sources */ = {isa = PBXBuildFile; fileRef = 873FC1271E22D7B40089AE60 /* recovery.c */; };
-		873FC1301E22D7E40089AE60 /* libimobiledevice.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 873FC12F1E22D7E40089AE60 /* libimobiledevice.6.dylib */; };
-		873FC1321E22D7F60089AE60 /* libirecovery.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 873FC1311E22D7F60089AE60 /* libirecovery.2.dylib */; };
-		873FC1341E22D80A0089AE60 /* libplist.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 873FC1331E22D80A0089AE60 /* libplist.3.dylib */; };
 		87FBE6521D2BCC0700FB5E05 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 87FBE6511D2BCC0700FB5E05 /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +34,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5669113623B4B4C300C93279 /* all.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = all.h; sourceTree = "<group>"; };
+		5669113723B4B50700C93279 /* libusbmuxd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libusbmuxd.a; path = ../../../../../usr/local/lib/libusbmuxd.a; sourceTree = "<group>"; };
+		5669113A23B4B52E00C93279 /* libirecovery.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libirecovery.a; path = ../../../../../usr/local/lib/libirecovery.a; sourceTree = "<group>"; };
+		5669113C23B4B53E00C93279 /* libimobiledevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libimobiledevice.a; path = ../../../../../usr/local/lib/libimobiledevice.a; sourceTree = "<group>"; };
+		5669114123B4B7C400C93279 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = ../../../../../usr/local/lib/libcrypto.a; sourceTree = "<group>"; };
 		873FC11E1E22D7B40089AE60 /* common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
 		873FC11F1E22D7B40089AE60 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
 		873FC1201E22D7B40089AE60 /* dfu.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dfu.c; sourceTree = "<group>"; };
@@ -42,10 +50,6 @@
 		873FC1261E22D7B40089AE60 /* normal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = normal.h; sourceTree = "<group>"; };
 		873FC1271E22D7B40089AE60 /* recovery.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = recovery.c; sourceTree = "<group>"; };
 		873FC1281E22D7B40089AE60 /* recovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = recovery.h; sourceTree = "<group>"; };
-		873FC12F1E22D7E40089AE60 /* libimobiledevice.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libimobiledevice.6.dylib; path = ../../../../usr/local/lib/libimobiledevice.6.dylib; sourceTree = "<group>"; };
-		873FC1311E22D7F60089AE60 /* libirecovery.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libirecovery.2.dylib; path = ../../../../usr/local/lib/libirecovery.2.dylib; sourceTree = "<group>"; };
-		873FC1331E22D80A0089AE60 /* libplist.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libplist.3.dylib; path = ../../../../usr/local/lib/libplist.3.dylib; sourceTree = "<group>"; };
-		873FC1351E22D81A0089AE60 /* all_igetnonce.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = all_igetnonce.h; sourceTree = "<group>"; };
 		87FBE64E1D2BCC0700FB5E05 /* igetnonce */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = igetnonce; sourceTree = BUILT_PRODUCTS_DIR; };
 		87FBE6511D2BCC0700FB5E05 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,9 +59,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873FC1341E22D80A0089AE60 /* libplist.3.dylib in Frameworks */,
-				873FC1321E22D7F60089AE60 /* libirecovery.2.dylib in Frameworks */,
-				873FC1301E22D7E40089AE60 /* libimobiledevice.6.dylib in Frameworks */,
+				5669113D23B4B53E00C93279 /* libimobiledevice.a in Frameworks */,
+				5669113B23B4B52E00C93279 /* libirecovery.a in Frameworks */,
+				5669114223B4B7C500C93279 /* libcrypto.a in Frameworks */,
+				5669113823B4B50700C93279 /* libusbmuxd.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,9 +72,10 @@
 		873FC12E1E22D7E40089AE60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				873FC1331E22D80A0089AE60 /* libplist.3.dylib */,
-				873FC1311E22D7F60089AE60 /* libirecovery.2.dylib */,
-				873FC12F1E22D7E40089AE60 /* libimobiledevice.6.dylib */,
+				5669113723B4B50700C93279 /* libusbmuxd.a */,
+				5669113A23B4B52E00C93279 /* libirecovery.a */,
+				5669113C23B4B53E00C93279 /* libimobiledevice.a */,
+				5669114123B4B7C400C93279 /* libcrypto.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -94,7 +100,7 @@
 		87FBE6501D2BCC0700FB5E05 /* igetnonce */ = {
 			isa = PBXGroup;
 			children = (
-				873FC1351E22D81A0089AE60 /* all_igetnonce.h */,
+				5669113623B4B4C300C93279 /* all.h */,
 				873FC11E1E22D7B40089AE60 /* common.c */,
 				873FC11F1E22D7B40089AE60 /* common.h */,
 				873FC1201E22D7B40089AE60 /* dfu.c */,
@@ -121,6 +127,7 @@
 				87FBE64A1D2BCC0700FB5E05 /* Sources */,
 				87FBE64B1D2BCC0700FB5E05 /* Frameworks */,
 				87FBE64C1D2BCC0700FB5E05 /* CopyFiles */,
+				5669113E23B4B5AE00C93279 /* Versioning */,
 			);
 			buildRules = (
 			);
@@ -137,7 +144,7 @@
 		87FBE6461D2BCC0700FB5E05 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = tihmstar;
 				TargetAttributes = {
 					87FBE64D1D2BCC0700FB5E05 = {
@@ -146,11 +153,12 @@
 				};
 			};
 			buildConfigurationList = 87FBE6491D2BCC0700FB5E05 /* Build configuration list for PBXProject "igetnonce" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 87FBE6451D2BCC0700FB5E05;
 			productRefGroup = 87FBE64F1D2BCC0700FB5E05 /* Products */;
@@ -162,15 +170,38 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5669113E23B4B5AE00C93279 /* Versioning */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Versioning;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\nsed -i '.bak' \"s/.*IGETNONCE_VERSION_COMMIT.*/#define IGETNONCE_VERSION_COMMIT \\\"$(git rev-list --count HEAD)\\\"/\" ./igetnonce/all.h 2>/dev/null || sed -i \"s/.*IGETNONCE_VERSION_COMMIT.*/#define IGETNONCE_VERSION_COMMIT \\\"$(git rev-list --count HEAD)\\\"/\" ./igetnonce/all.h 2>/dev/null\nsed -i '.bak' \"s/.*IGETNONCE_VERSION_SHA.*/#define IGETNONCE_VERSION_SHA \\\"$(git rev-list --count HEAD)\\\"/\" ./igetnonce/all.h 2>/dev/null || sed -i \"s/.*IGETNONCE_VERSION_SHA.*/#define IGETNONCE_VERSION_SHA \\\"$(git rev-list --count HEAD)\\\"/\" ./igetnonce/all.h 2>/dev/null\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		87FBE64A1D2BCC0700FB5E05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5669114023B4B64600C93279 /* all.h in Sources */,
 				873FC12D1E22D7B40089AE60 /* recovery.c in Sources */,
 				873FC12A1E22D7B40089AE60 /* dfu.c in Sources */,
 				873FC12C1E22D7B40089AE60 /* normal.c in Sources */,
 				873FC1291E22D7B40089AE60 /* common.c in Sources */,
+				5669113F23B4B63F00C93279 /* endianness.h in Sources */,
 				873FC12B1E22D7B40089AE60 /* idevicerestore.c in Sources */,
 				87FBE6521D2BCC0700FB5E05 /* main.c in Sources */,
 			);
@@ -187,13 +218,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -215,9 +256,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = net.tihmstar.igetnonce;
+				PRODUCT_NAME = igetnonce;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -230,13 +275,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -252,8 +307,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = net.tihmstar.igetnonce;
+				PRODUCT_NAME = igetnonce;
 				SDKROOT = macosx;
 			};
 			name = Release;

@@ -8,9 +8,11 @@
 
 #include <stdio.h>
 #include <string.h>
+
+#include "all.h"
+
 #include "idevicerestore.h"
 #include "common.h"
-#include "all_igetnonce.h"
 
 int64_t parseECID(const char *ecid){
     const char *ecidBK = ecid;
@@ -48,7 +50,7 @@ int64_t parseECID(const char *ecid){
 }
 
 int main(int argc, const char * argv[]) {
-    printf("Version: " VERSION_COMMIT_SHA_IGETNONCE " - " VERSION_COMMIT_COUNT_IGETNONCE "\n");
+    printf("Version: "IGETNONCE_VERSION_SHA" - "IGETNONCE_VERSION_COUNT"\n");
     struct idevicerestore_client_t* client = idevicerestore_client_new();
     
     if (argc >= 3){
