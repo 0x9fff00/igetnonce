@@ -56,13 +56,12 @@ int main(int argc, const char * argv[]) {
     if (argc >= 3){
         if (strncmp(argv[1],"-e",2) == 0){
             if ((client->ecid = parseECID(argv[2])) == 0){
-                printf("Error: can't parse ecid \"%s\", continuing without ecid\n",argv[2]);
+                printf("Error: can't parse ECID \"%s\", continuing without ecid\n",argv[2]);
             }else{
-                printf("User specified ecid=%llx\n",client->ecid);
+                printf("User specified ECID=%llx\n",client->ecid);
             }
         }
     }
-    
     
     if (check_mode(client) < 0 || client->mode->index == MODE_UNKNOWN ||
         ((client->flags & FLAG_DOWNGRADE) && client->mode->index != MODE_DFU && client->mode->index != MODE_RECOVERY)) {
@@ -77,18 +76,16 @@ int main(int argc, const char * argv[]) {
     
     info("Identified device as %s, %s ", client->device->hardware_model, client->device->product_type);
     
-    
     switch (client->mode->index) {
         case MODE_NORMAL:
             info("in normal mode... ");
             break;
         case MODE_DFU:
-            info("in dfu mode... ");
+            info("in DFU mode... ");
             break;
         case MODE_RECOVERY:
             info("in recovery mode... ");
             break;
-            
         default:
             info("failed\n");
             error("ERROR: Device is in an invalid state\n");
@@ -108,7 +105,7 @@ int main(int argc, const char * argv[]) {
     info("ecid=%llx\n",client->ecid);
     
     if (client->mode->index == MODE_NORMAL) {
-        error("WARNING: Getting a nonce in normal mode will overwrite the generator in NVRAM!\n");
+        error("WARNING: Getting a ApNonce in normal mode will overwrite the generator in NVRAM!\n");
         info("Continue anyway? [y/n] : ");
         char cont[2] = "n";
         scanf("%c", cont);
@@ -119,10 +116,10 @@ int main(int argc, const char * argv[]) {
     int nonce_size = 0;
     
     if (get_ap_nonce(client, &nonce, &nonce_size) < 0) {
-        error("NOTE: Unable to get nonce from device\n");
+        error("NOTE: Unable to get ApNonce from device\n");
     }
     if (get_sep_nonce(client, &nonce, &nonce_size) < 0) {
-        error("NOTE: Unable to get nonce from device\n");
+        error("NOTE: Unable to get SepNonce from device\n");
     }
     
     return 0;
